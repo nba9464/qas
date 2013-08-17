@@ -1,0 +1,597 @@
+/* version:1.0 build:20130810140857 */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    -webkit-user-select: none
+}
+
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    -webkit-text-size-adjust: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+}
+
+textarea, input[type=password], input[type=text] {
+    resize: none;
+    outline: 0;
+    -webkit-appearance: none;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background: #fff;
+    overflow: scroll
+}
+
+body, html {
+    text-align: left;
+    height: 100%;
+    width: 100%;
+    font-family: "Helvetica Neue", Arial, HelveticaNeue, Helvetica-Neue, Helvetica, "BBAlpha Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-align: center
+}
+
+body {
+    width: 640px
+}
+
+.ellipsis {
+    text-overflow: ellipsis;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden
+}
+
+.bg-home {
+    background-image: url(http://img3.cache.netease.com/utf8/3g/huatian/bg-home.jpg?4)
+}
+
+.bg-user {
+    background-image: url(http://img3.cache.netease.com/utf8/3g/huatian/bg-user.jpg?5)
+}
+
+.icon-home {
+    background-image: url(http://img3.cache.netease.com/utf8/3g/huatian/icon-home.png?4);
+    background-repeat: no-repeat !important
+}
+
+body {
+    background-color: #18113d
+}
+
+body.home-view>.home-ct, body.rule-view>.rule-ct, body.qa-view>.qa-ct, body.user-view>.user-ct, body.game-view>.game-ct {
+    display: -webkit-box !important
+}
+
+.home-ct, .qa-ct, .user-ct, .game-ct, .rule-ct {
+    display: none;
+    -webkit-box-orient: vertical;
+    width: 100%
+}
+
+.home-ct, .game-ct, .qa-ct {
+    height: 1095px
+}
+
+.home-ct {
+    position: relative
+}
+
+.home-ct>div {
+    z-index: 99;
+    position: absolute
+}
+
+.home-ct>div.text {
+    top: 218px;
+    left: 0;
+    width: 640px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    font-size: 26px;
+    color: #fff7f7
+}
+
+.home-ct>div.text>div {
+    line-height: 40px;
+    text-align: center
+}
+
+.home-ct>div.rule {
+    top: 472px;
+    left: 0;
+    height: 94px;
+    width: 100%
+}
+
+.home-ct>div.rule:active {
+    background-color: rgba(0, 0, 0, .34)
+}
+
+.home-ct>div.boy, .home-ct>div.girl {
+    position: absolute;
+    top: 625px;
+    width: 202px;
+    height: 202px
+}
+
+.home-ct>div.boy:active, .home-ct>div.girl:active {
+    -webkit-box-shadow: 0 0 20px 5px #fb4258
+}
+
+.home-ct>div.boy {
+    left: 97px
+}
+
+.home-ct>div.girl {
+    left: 340px
+}
+
+.user-ct>header {
+    color: #fff7f7;
+    font-size: 32px;
+    padding: 90px 0 62px;
+    text-align: center
+}
+
+.user-ct>.list {
+    -webkit-transform: translateZ(0);
+    width: 100%;
+    padding: 0 50px
+}
+
+.user-ct>.list>article {
+    float: left;
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    margin: 5px;
+    background-color: #fff
+}
+
+.user-ct>.list>article:active {
+    -webkit-box-shadow: 0 0 20px 5px #fb4258
+}
+
+.user-ct>.list>article>div {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-repeat: 　 no-repeat !important;
+    -webkit-transition: background 500ms ease-in-out 300ms
+}
+
+.user-ct>.list.boy>article>div {
+    background-position: -53px -340px
+}
+
+.user-ct>.list.girl>article>div {
+    background-position: -340px -340px
+}
+
+.user-ct>.ft {
+    width: 100%
+}
+
+.user-ct>.ft>.bts {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+}
+
+.user-ct>.ft>.bts>.switch {
+    width: 232px;
+    height: 248px;
+    background-position: -53px -35px
+}
+
+.user-ct>.ft>.bts>.switch:active {
+    background-position: -353px -35px
+}
+
+.game-ct {
+    color: #fff7f7;
+    padding-top: 148px
+}
+
+.game-ct>header {
+    padding: 0 10px;
+    font-size: 32px
+}
+
+.game-ct>header>div {
+    display: block;
+    text-align: center;
+    line-height: 40px
+}
+
+.game-ct>.list {
+    -webkit-transform: translateZ(0);
+    width: 100%;
+    padding: 58px 102px 75px
+}
+
+.game-ct>.list.start .mis>.avatar {
+    background-image: url(http://img3.cache.netease.com/utf8/3g/huatian/icon-home.png?4);
+    background-repeat: no-repeat !important;
+    background-color: transparent
+}
+
+.game-ct>.list.start .mis>.avatar>div {
+    display: none
+}
+
+.game-ct>.list.start .mis.boy>.avatar {
+    background-position: -61px -1413px
+}
+
+.game-ct>.list.start .mis.girl>.avatar {
+    background-position: -376px -1412px
+}
+
+.game-ct>.list.pause .mis.boy>.avatar>div>div {
+    display: inline-block;
+    background-position: -249px -1875px
+}
+
+.game-ct>.list.pause .mis.girl>.avatar>div>div {
+    display: inline-block;
+    background-position: -422px -1875px
+}
+
+.game-ct>.list.over>article>.avatar:active {
+    -webkit-box-shadow: 0 0 20px 5px #fb4258
+}
+
+.game-ct>.list>article {
+    float: left;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    background: transparent
+}
+
+.game-ct>.list>article>.avatar {
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    margin: 0 24px;
+    background-color: #fff
+}
+
+.game-ct>.list>article>.avatar>div {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-size: 150px auto;
+    background-position: 50% 50%;
+    background-repeat: 　 no-repeat !important;
+    -webkit-transition: background 500ms ease-in-out 300ms;
+    position: relative
+}
+
+.game-ct>.list>article>.avatar>div>div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7)
+}
+
+.game-ct>.list>article .title {
+    margin-top: 25px;
+    font-size: 26px;
+    color: #fff7f7;
+    text-align: center
+}
+
+.game-ct>.ft {
+    padding-left: 60px
+}
+
+.game-ct>.ft>.bt {
+    display: inline-block;
+    width: 520px;
+    text-align: center;
+    font-size: 30px;
+    color: #fee7ec;
+    background-color: #fb4258;
+    padding: 26px 0
+}
+
+.game-ct>.ft>.bt:active {
+    background-color: #b90039
+}
+
+.qa-ct>header {
+    padding: 18px 16px 10px 22px;
+    display: -webkit-box
+}
+
+.qa-ct>header>.process {
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-flex: 1
+}
+
+.qa-ct>header>.process>.icon {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background-position: -154px -570px;
+    margin-right: 8px
+}
+
+.qa-ct>header>.process>.dot {
+    width: 6px;
+    height: 6px;
+    margin: 0 3px;
+    -webkit-border-radius: 3px;
+    background-color: #fff7f7;
+    -webkit-transition: background 800ms ease-in-out 200ms
+}
+
+.qa-ct>header>.process>.dot.on {
+    background-color: #fc4258
+}
+
+.qa-ct>header>.help {
+    color: #fff7f7;
+    padding: 12px 26px;
+    font-size: 26px;
+    background-color: #fb4258
+}
+
+.qa-ct>header>.help:active {
+    background-color: #b90039
+}
+
+.qa-ct>.bd {
+    color: #fff7f7;
+    position: relative
+}
+
+.qa-ct>.bd>.qas {
+    display: -webkit-box;
+    width: 640px;
+    overflow: hidden
+}
+
+.qa-ct>.bd>.arrow {
+    display: inline-block;
+    position: absolute;
+    width: 165px;
+    height: 165px;
+    z-index: 10;
+    background-position: -53px -1868px;
+    top: 325px;
+    left: 238px
+}
+
+.qa-ct>.bd .list {
+    display: -webkit-box;
+    -webkit-transform: translateZ(0);
+    -webkit-transition: -webkit-transform .5s ease
+}
+
+.qa-ct>.bd .list>.item {
+    -webkit-transform: translateZ(0);
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    width: 640px
+}
+
+.qa-ct>.bd .list>.item>.title {
+    font-size: 32px;
+    width: 100%;
+    background-image: url(http://img3.cache.netease.com/utf8/3g/huatian/icon-home.png?4);
+    background-repeat: no-repeat !important;
+    background-position: 0 -1633px;
+    height: 182px;
+    padding: 52px 52px 0;
+    margin-bottom: 30px
+}
+
+.qa-ct>.bd .list>.item>.ans {
+    display: -webkit-box;
+    -webkit-box-pack: center
+}
+
+.qa-ct>.bd .list>.item>.ans>div {
+    margin: 0 8px
+}
+
+.qa-ct>.bd .list>.item>.ans>div>.img {
+    width: 288px;
+    height: 388px;
+    padding: 10px;
+    background-color: #fff
+}
+
+.qa-ct>.bd .list>.item>.ans>div>.img:active {
+    -webkit-box-shadow: 0 0 20px 5px #fb4258
+}
+
+.qa-ct>.bd .list>.item>.ans>div>.img>div {
+    width: 268px;
+    height: 368px;
+    background-size: 268px auto;
+    background-repeat: no-repeat !important
+}
+
+.qa-ct>.bd .list>.item>.ans>div>.an {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 25px
+}
+
+.rule-ct {
+    padding-top: 16px;
+    color: #fff7f7;
+    padding-left: 46px;
+    padding-bottom: 200px
+}
+
+.rule-ct>header {
+    padding-left: 10px
+}
+
+.rule-ct>header>div {
+    display: block;
+    width: 100%
+}
+
+.rule-ct>header>.return {
+    height: 60px;
+    padding-right: 16px
+}
+
+.rule-ct>header>.return>div {
+    padding: 12px 26px;
+    float: right;
+    font-size: 26px;
+    background-color: #fb4258
+}
+
+.rule-ct>header>.return>div:active {
+    background-color: #b90039
+}
+
+.rule-ct>header>.title {
+    font-size: 48px
+}
+
+.rule-ct>.bd {
+    background-position: -16px -650px;
+    font-size: 30px;
+    padding-left: 10px;
+    min-height: 747px
+}
+
+.rule-ct>.bd>article {
+    display: -webkit-box;
+    padding: 15px 0;
+    border-bottom: 1px #1d0b34 solid;
+    border-top: 1px #473165 solid
+}
+
+.rule-ct>.bd>article.first {
+    border-top: 0 !important
+}
+
+.rule-ct>.bd>article.last {
+    border-bottom: 0 !important
+}
+
+.rule-ct>.bd>article>.icon {
+    width: 28px;
+    height: 38px;
+    background-position: -53px -563px;
+    margin: 0 23px 0 13px
+}
+
+.rule-ct>.bd>article>.text {
+    padding-right: 40px;
+    -webkit-box-flex: 1;
+    line-height: 40px;
+    background-image: url(about:blank)
+}
+
+.info-ct {
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 640px;
+    height: 1095px;
+    display: none;
+    -webkit-box-orient: vertical;
+    background-color: rgba(0, 0, 0, .9);
+    word-break: break-all;
+    color: #fff7f7;
+    font-size: 26px
+}
+
+.info-ct>header {
+    padding: 10px 64px 30px 0
+}
+
+.info-ct>header>.close {
+    float: right;
+    width: 70px;
+    height: 70px;
+    background-position: -249px -548px
+}
+
+.info-ct>header>.close:active {
+    background-position: -353px -548px
+}
+
+.info-ct>.avatar {
+    width: 170px;
+    height: 170px;
+    padding: 10px;
+    margin-left: 234px;
+    background-color: #fff
+}
+
+.info-ct>.avatar>div {
+    overflow: hidden;
+    width: 150px;
+    height: 150px;
+    background-size: 150px auto;
+    background-position: 50% 50%;
+    background-repeat: 　 no-repeat !important
+}
+
+.info-ct>.info {
+    margin: 40px 0 0 234px
+}
+
+.info-ct>.info>article {
+    display: -webkit-box;
+    padding: 2px 0
+}
+
+.info-ct>.info>article>div {
+    padding-right: 26px
+}
+
+.info-ct>.text-a {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-pack: center;
+    -webkit-box-align: center;
+    margin: 25px 0 44px
+}
+
+.info-ct .ft {
+    width: 100%
+}
+
+.info-ct .ft>.bts {
+    display: -webkit-box;
+    -webkit-box-pack: center;
+    -webkit-box-align: center
+}
+
+.info-ct .ft>.bts>div {
+    font-size: 30px;
+    width: 260px;
+    margin: 0 10px;
+    background-color: #fb4258;
+    padding: 30px 0;
+    text-align: center
+}
+
+.info-ct .ft>.bts>div:active {
+    background-color: #b90039
+}
